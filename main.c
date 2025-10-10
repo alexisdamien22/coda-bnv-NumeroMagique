@@ -39,20 +39,20 @@ int main()
 				{
 					i_bot = (max_bot + min_bot) / 2;
 					if(i_bot > random_number)
-                	        	{
-                                		t_bot++;
+                	{
+                        t_bot++;
 						max_bot = i_bot;
-                        		}
-                                	else if(i_bot < random_number)
-                        		{
-                                		t_bot++;
+                    }
+                    else if(i_bot < random_number)
+                    {
+                        t_bot++;
 						min_bot = i_bot;
-                        		}
-                        		else if(i_bot == random_number)
-                        		{
-                                		printf("Gagné !\nTrouvé en %d essais\nL'IA l'a fait en %d...\n",t,t_bot);
-                	        		exit(0);
-					}
+                    }
+                    else if(i_bot == random_number)
+                    {
+                        printf("Gagné !\nTrouvé en %d essais\nL'IA l'a fait en %d...\n",t,t_bot);
+                	    exit(0);
+					}	
 				}
             }
 		}
